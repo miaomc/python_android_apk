@@ -1,33 +1,42 @@
-1. Build Environment:
+ï»¿1. Build Environment:
 (0)windows 7
 (1)install virtualbox
 (2)install CentOS7------install full version or development version which has "ifconfig","route" and GUI
-(3)make NAT and HOST-ONLY network(ÎÒÒ²Ã»¸ãÇå³ş£¬ÔõÃ´¾ÍÄÜpingÍ¨ÍâÍøÁË)
+(3)make NAT and HOST-ONLY network(æˆ‘ä¹Ÿæ²¡ææ¸…æ¥šï¼Œæ€ä¹ˆå°±èƒ½pingé€šå¤–ç½‘äº†)
 (3)install python-pip: CentOS7 has python V2.7.5 without pip
     (a)if yum.pip has been ocuppied, "rm -rf /var/run/yum.p"
-¡¡¡¡(b)yum -y install epel-release
+ã€€ã€€(b)yum -y install epel-release
        yum -y install python-pip
 
 2. Install P4A:https://pypi.org/project/python-for-android/0.5.3/
 (1)pip install python-for-android
-   python-for-android recipes £¨²âÊÔÊÇ·ñ³É¹¦£©
-(2)Óöµ½centosÃ»ÓĞdpkgÃüÁî£¨ËãÁË»¹ÊÇĞ´ÖĞÎÄºÃÁË£©
-   yum update  £¨Éı¼¶ÁË58MB£©
-(3)¸ù¾İ¹Ù·½ËµÃ÷£¬²»Ò»¶¨ÒªÓÃËûËµµÄÃüÁî£¬Ö»ÒªÕâĞ©°ü¶¼ÓĞ¾Í¿ÉÒÔ£¬È»ºóÓĞ²éÁËÒ»ÏÂ£¬Ò»¸ö½Ğ¡°buildozer¡±µÄ¹¤¾ß£¬Ò²ÊÇkivyÕâ¸ö¹¤×÷×éÅªµÄ£¬ÏÖÔÚ»¹²»ÖªµÀ¡°buildozer¡±ºÍ¡°python for android¡±µÄÇø±ğ
+   python-for-android recipes ï¼ˆæµ‹è¯•æ˜¯å¦æˆåŠŸï¼‰
+(2)é‡åˆ°centosæ²¡æœ‰dpkgå‘½ä»¤ï¼ˆç®—äº†è¿˜æ˜¯å†™ä¸­æ–‡å¥½äº†ï¼‰
+   yum update  ï¼ˆå‡çº§äº†58MBï¼‰
+(3)æ ¹æ®å®˜æ–¹è¯´æ˜ï¼Œä¸ä¸€å®šè¦ç”¨ä»–è¯´çš„å‘½ä»¤ï¼Œåªè¦è¿™äº›åŒ…éƒ½æœ‰å°±å¯ä»¥ï¼Œç„¶åæœ‰æŸ¥äº†ä¸€ä¸‹ï¼Œä¸€ä¸ªå«â€œbuildozerâ€çš„å·¥å…·ï¼Œä¹Ÿæ˜¯kivyè¿™ä¸ªå·¥ä½œç»„å¼„çš„ï¼Œç°åœ¨è¿˜ä¸çŸ¥é“â€œbuildozerâ€å’Œâ€œpython for androidâ€çš„åŒºåˆ«
 
-3. °²×°JDKºÍNDK
-Ê¹ÓÃvirtualboxµÄ ±¾µØ¹²Ïí£¬¸ß¼¶¹¦ÄÜ°ü£¬Ö±½ÓÔÚvirtualbox½çÃæ¾ÍÄÜ×Ô¶¯¹ÒÔØ
+3. å®‰è£…JDKå’ŒNDK
+ä½¿ç”¨virtualboxçš„ æœ¬åœ°å…±äº«ï¼Œé«˜çº§åŠŸèƒ½åŒ…ï¼Œç›´æ¥åœ¨virtualboxç•Œé¢å°±èƒ½è‡ªåŠ¨æŒ‚è½½
 
-4. Õâ¸öÓöµ½¸öÎÊÌâ£ºÆÚ³õµÄlinuxÖ»×öÁË10¸öG£¬°²×°*DK²»¹»£¬Í¨¹ıÊ¹ÓÃvirutalbox¶¯Ì¬Ó²ÅÌÀ©Èİ£¬Íâ¼ÓlvmÃüÁî£¬¸ã¶¨¡£
-ÍÆ¼öÁ´½Ó£ºhttps://blog.csdn.net/xialingming/article/details/81291682
-ÕâÆªÎÄÕÂĞ´µÄ²»´í£¬²¢ÇÒÖ÷ÒªÊÇ¹é¹¦ÓÚlinuxµÄlvm×öµÄ±È½ÏºÃ£º
-´ÅÅÌÀ©ÈİÖ®ºó£¬°ÑÀ©ÈİµÄ²¿·Ö½¨Ò»¸öÇø£¬¸ñÊ½»¯£¬È»ºó¼Óµ½Ö®Ç°ÄÇ¸öÏµÍ³Ä¿Â¼ÏÂ¾ÍºÃÁË£»
-ÊÇÍ¬Ò»¸öµçÄÔ£¬ÖĞ¼älinuxĞèÒªÖØÆôÒ»´Î£¬linuxÔÚÖØÆôµÄÊ±ºò£¬»áÈ¥×öÕâ¸öÀ©ÈİµÄ³õ²½²Ù×÷£»
-È»ºó°ÑÏµÍ³Ä¿Â¼µÄmapperË¢ĞÂÒ»ÏÂ£¬¾ÍÀ©ÈİºÃÁË¡£
+4. è¿™ä¸ªé‡åˆ°ä¸ªé—®é¢˜ï¼šæœŸåˆçš„linuxåªåšäº†10ä¸ªGï¼Œå®‰è£…*DKä¸å¤Ÿï¼Œé€šè¿‡ä½¿ç”¨virutalboxåŠ¨æ€ç¡¬ç›˜æ‰©å®¹ï¼Œå¤–åŠ lvmå‘½ä»¤ï¼Œæå®šã€‚
+æ¨èé“¾æ¥ï¼šhttps://blog.csdn.net/xialingming/article/details/81291682
+è¿™ç¯‡æ–‡ç« å†™çš„ä¸é”™ï¼Œå¹¶ä¸”ä¸»è¦æ˜¯å½’åŠŸäºlinuxçš„lvmåšçš„æ¯”è¾ƒå¥½ï¼š
+ç£ç›˜æ‰©å®¹ä¹‹åï¼ŒæŠŠæ‰©å®¹çš„éƒ¨åˆ†å»ºä¸€ä¸ªåŒºï¼Œæ ¼å¼åŒ–ï¼Œç„¶ååŠ åˆ°ä¹‹å‰é‚£ä¸ªç³»ç»Ÿç›®å½•ä¸‹å°±å¥½äº†ï¼›
+æ˜¯åŒä¸€ä¸ªç”µè„‘ï¼Œä¸­é—´linuxéœ€è¦é‡å¯ä¸€æ¬¡ï¼Œlinuxåœ¨é‡å¯çš„æ—¶å€™ï¼Œä¼šå»åšè¿™ä¸ªæ‰©å®¹çš„åˆæ­¥æ“ä½œï¼›
+ç„¶åæŠŠç³»ç»Ÿç›®å½•çš„mapperåˆ·æ–°ä¸€ä¸‹ï¼Œå°±æ‰©å®¹å¥½äº†ã€‚
 
-5. ¼ÌĞø½âÑ¹JDKºÍNDK
+5. ç»§ç»­è§£å‹JDKå’ŒNDK,æŒ‰ç…§å®˜ç½‘android-for-pythonè§£å‹ï¼Œè®¾ç½®ç¯å¢ƒå˜é‡
+
+6. æµ‹è¯•
+p4a apk --private $HOME/code/myapp --package=org.example.myapp --name "My application" --version 0.1 --bootstrap=sdl2 --requirements=python2,kivy
+å‡ºç°bugï¼ˆCould not find `android` or `sdkmanager` binaries in Android SDK. Exiting.ï¼‰ï¼Œä¼°è®¡æ˜¯JDKçš„ç¯å¢ƒæ²¡æœ‰æ­å¥½ã€‚
+..to be continue
 
 P.S.
-1. kivy´ò°üÓĞÁ½ÖÖ¹¤¾ß£¬·Ö±ğÊÇp4aºÍbuildozer£¬kivydev64Ê¹ÓÃp4a£¬kivydevÊ¹ÓÃbuildozer¡£buildozerÆäÊµÊÇ¶Ôp4a×öÁË½øÒ»²½·â×°£¬»»ÌÀ²»»»Ò©¡£
+1. kivyæ‰“åŒ…æœ‰ä¸¤ç§å·¥å…·ï¼Œåˆ†åˆ«æ˜¯p4aå’Œbuildozerï¼Œkivydev64ä½¿ç”¨p4aï¼Œkivydevä½¿ç”¨buildozerã€‚buildozerå…¶å®æ˜¯å¯¹p4aåšäº†è¿›ä¸€æ­¥å°è£…ï¼Œæ¢æ±¤ä¸æ¢è¯ã€‚
 2. Buildozer currently works only in Linux
 3. https://kivy.org/doc/stable/guide/packaging-android.html
+4. VirtualBox-å…±äº«æ–‡ä»¶å¤¹-å›ºå®šåˆ†é…myxx sudo mount -t vboxsf myxx /mnt/share
+5. unzip xxxx.zip
+6. pip install kivy https://mirrors.aliyun.com/pypi/simple/
+7. java -version
