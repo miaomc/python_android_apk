@@ -32,6 +32,25 @@ p4a apk --private $HOME/code/myapp --package=org.example.myapp --name "My applic
 出现bug（Could not find `android` or `sdkmanager` binaries in Android SDK. Exiting.），估计是JDK的环境没有搭好。
 ..to be continue
 
+7. 采用Kivy的Ubantu镜像
+
+8. *.kv文件调用不成功----就是跟类名一致，可以不考虑尾缀的‘App’
+How to load KV：
+（1） Kivy looks for a Kv file with the same name as your App class in lowercase, minus “App” if it ends with ‘App’
+（2） or Builder.load_file('path/to/file.kv')
+（3） or Builder.load_string(kv_string)
+
+9. *。kv文件几个关键字
+你可以以如下方式声明你的根控件类：
+Widget:
+使用如下方式声明其他控件：
+<MyWidget>:
+KV语言有三个特殊的关键字：
+    app: 总是与你的应用关联
+    root: 与当前控件的根控件关联
+    self: 与控件关联
+
+
 P.S.
 1. kivy打包有两种工具，分别是p4a和buildozer，kivydev64使用p4a，kivydev使用buildozer。buildozer其实是对p4a做了进一步封装，换汤不换药。
 2. Buildozer currently works only in Linux

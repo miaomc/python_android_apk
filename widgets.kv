@@ -1,0 +1,19 @@
+<BoxLayout>
+    orientation: 'vertical'
+    Button:
+        text: 'Eat bubu~'
+        text_size:100,50
+
+        color: .8,.9,0,1
+        on_press: root.callback_eat()
+    Button:
+        text: 'Done.'
+        size:self.texture_size
+        color: .8,.9,0,1 
+        on_press: root.callback_done()
+
+    Button:
+        text: 'Tu Nai Le * *'
+        size:self.texture_size
+        color: .8,.9,0,1 
+        on_press: root.callback_tunai()
