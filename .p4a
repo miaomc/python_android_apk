@@ -1,0 +1,12 @@
+--dist_name py2dist
+--android_api 19
+--sdk_dir /home/kivydev/andr/android-sdk-linux
+--ndk_dir /home/kivydev/andr/android-ndk-r10e
+
+
+--requirements python2,kivy
+--private . 
+--package com.myapp.test
+--name QiaBubu
+--version 2.2
+--bootstrap sdl2 
