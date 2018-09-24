@@ -1,19 +1,33 @@
-<BoxLayout>
+<Accordion>
     orientation: 'vertical'
-    Button:
-        text: 'Eat bubu~'
-        text_size:100,50
+    AccordionItem
+        title: 'COMMANDS'
+        BoxLayout
+            orientation: 'vertical'
+            Button:
+                text: 'Qia bubu~'
+                color: .8,.9,0,1
+                on_press: root.callback(self.text)
+            Button:
+                text: 'Qia hao le.'
+                color: .8,.9,0,1 
+                on_press: root.callback(self.text)
 
-        color: .8,.9,0,1
-        on_press: root.callback_eat()
-    Button:
-        text: 'Done.'
-        size:self.texture_size
-        color: .8,.9,0,1 
-        on_press: root.callback_done()
+            Button:
+                id: btn_tn
+                text: 'Tu Nai Le * *'
+                color: .8,.9,0,1 
+                on_press: root.callback(self.text)
 
-    Button:
-        text: 'Tu Nai Le * *'
-        size:self.texture_size
-        color: .8,.9,0,1 
-        on_press: root.callback_tunai()
+    AccordionItem
+        title: 'RECORDING'
+        BoxLayout
+            orientation: 'vertical'
+            ListView:
+                size_hint: (1, 0.9)
+                id: my_list
+                item_strings: ['\nStart from here.\n']
+            Button:
+                text: 'Refresh Data'
+                size_hint: (1, 0.1)
+                on_press: root.callback_refresh()

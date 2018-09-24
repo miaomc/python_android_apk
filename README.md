@@ -1,4 +1,6 @@
-﻿1. Build Environment:
+﻿0. This main.py is used to recording time and infos of feeding children(using python,kivy, making *.apk by python-for-android)
+
+1. Build Environment:
 (0)windows 7
 (1)install virtualbox
 (2)install CentOS7------install full version or development version which has "ifconfig","route" and GUI
