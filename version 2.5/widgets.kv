@@ -1,0 +1,46 @@
+<Accordion>
+    orientation: 'vertical'
+    AccordionItem
+        title: 'COMMANDS'
+        BoxLayout
+            orientation: 'vertical'
+            BoxLayout
+                orientation: 'horizontal'
+                Button:
+                    text: '(Left)Qia bubu ~~~'
+                    color: .8,.9,0,1
+                    size_hint: (0.5, 1) 
+                    on_press: root.callback(self.text)
+                Button:
+                    text: 'Qia bubu(Right) ~~~'
+                    color: .8,.9,0,1
+                    size_hint: (0.5, 1)                
+                    on_press: root.callback(self.text)
+            Button:
+                text: '~~~~~~Qia hao le.'
+                color: .8,.9,0,1 
+                on_press: root.callback(self.text)
+
+            Button:
+                id: btn_tn
+                text: 'Tu Nai Le * *'
+                color: .8,.9,0,1 
+                on_press: root.callback(self.text)
+
+    AccordionItem
+        title: 'RECORDING'
+        BoxLayout
+            orientation: 'vertical'
+            ListView:
+                size_hint: (1, 0.7)
+                id: my_list
+                item_strings: ['\n\nClick  Refresh Data to check recording.']
+            Button:
+                text: 'Refresh Data'
+                size_hint: (1, 0.1)
+                on_press: root.callback_refresh()
+            Button:
+                text: 'Copy to Clipboard'
+                size_hint: (1, 0.1)
+                on_press: root.callback_copy()
+
