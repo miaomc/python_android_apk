@@ -42,7 +42,7 @@ How to load KV：
 （2） or Builder.load_file('path/to/file.kv')
 （3） or Builder.load_string(kv_string)
 
-9. *。kv文件几个关键字
+9. *.kv文件几个关键字
 你可以以如下方式声明你的根控件类：
 Widget:
 使用如下方式声明其他控件：
